@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Suvidh Mathur - AIML Developer, Computer Vision Specialist, and Data Analyst. Checkout my projects, certificates, and work experience.">
+  <title>Suvidh Mathur | AIML Developer & Data Analyst Portfolio</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Decorative Blobs -->
+  <div class="glowing-blob blob-1"></div>
+  <div class="glowing-blob blob-2"></div>
+  <div class="glowing-blob blob-3"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="logo">
+        <span class="logo-icon">&lt;/&gt;</span>
+        <span class="gradient-text">Suvidh Mathur</span>
+      </a>
+      
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#home" class="nav-link active" data-section="home">Home</a>
+        <a href="#about" class="nav-link" data-section="about">About</a>
+        <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+        <a href="#experience" class="nav-link" data-section="experience">Experience</a>
+        <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+        <a href="#certificates" class="nav-link" data-section="certificates">Certificates</a>
+        <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="resume/SUVIDH_MATHUR_RESUMEee (1).pdf" target="_blank" class="btn btn-outline btn-sm nav-resume-btn" id="nav-resume">
+          <i class="fa-regular fa-file-pdf"></i> Resume
+        </a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="container hero-container grid-2">
+      <div class="hero-content reveal">
+        <div class="badge-wrapper">
+          <span class="badge"><i class="fa-solid fa-circle-dot pulse"></i> Available for Opportunities</span>
+        </div>
+        <h1 class="hero-title">
+          Hi, I am <br>
+          <span class="gradient-text">Suvidh Mathur</span>
+        </h1>
+        <h2 class="hero-subtitle">
+          I'm a <span class="typing-text-wrapper"><span class="typing-text" id="typing-text"></span><span class="typed-cursor">|</span></span>
+        </h2>
+        <p class="hero-description">
+          An Artificial Intelligence and Data Science engineer specializing in developing end-to-end Computer Vision models, 3D Point Cloud visualization algorithms, and interactive business intelligence systems.
+        </p>
+        
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary" id="hero-btn-work">
+            View My Projects <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="resume/SUVIDH_MATHUR_RESUMEee (1).pdf" target="_blank" class="btn btn-outline" id="hero-btn-resume">
+            <i class="fa-solid fa-download"></i> Get Resume
+          </a>
+        </div>
+
+        <div class="hero-socials">
+          <a href="https://www.linkedin.com/in/suvidh-mathur/" target="_blank" class="social-icon" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="mailto:suvidhmathur25@gmail.com" class="social-icon" aria-label="Email">
+            <i class="fa-regular fa-envelope"></i>
+          </a>
+          <a href="tel:+919610742239" class="social-icon" aria-label="Phone">
+            <i class="fa-solid fa-phone"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-image-area reveal">
+        <div class="image-border-glow">
+          <div class="image-inner">
+            <img src="photo/Gemini_Generated_Image_ivqufuivqufuivqu.png" alt="Suvidh Mathur" class="profile-photo" id="profile-img">
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="scroll-indicator">
+      <a href="#about" aria-label="Scroll Down">
+        <span class="mouse">
+          <span class="wheel"></span>
+        </span>
+      </a>
+    </div>
+  </section>
+
+  <!-- About & Education Section -->
+  <section id="about" class="about-section section-padding">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tagline">Get to Know Me</span>
+        <h2 class="section-title">About & Education</h2>
+        <div class="section-underline"></div>
+      </div>
+
+      <div class="about-grid grid-2 reveal">
+        <div class="about-text-content">
+          <h3>My Background</h3>
+          <p>
+            I am a passionate technology enthusiast currently pursuing my <strong>B.Tech in Artificial Intelligence and Data Science</strong> at MBM University, Jodhpur. With a solid foundation rooted in civil engineering and a transition into AI/ML, I approach technical problems with a unique multi-disciplinary perspective.
+          </p>
+          <p>
+            My work focuses on bridging the gap between hardware devices (like ESP32/relays) and advanced deep learning pipelines (like YOLOv8, CNN-RNNs). I love taking raw structural, visual, or timeseries data and transforming it into interactive dashboards or functional automation applications.
+          </p>
+          <div class="info-details-grid">
+            <div class="info-item">
+              <span class="info-label"><i class="fa-solid fa-envelope"></i> Email:</span>
+              <span class="info-value"><a href="mailto:suvidhmathur25@gmail.com">suvidhmathur25@gmail.com</a></span>
+            </div>
+            <div class="info-item">
+              <span class="info-label"><i class="fa-solid fa-phone"></i> Phone:</span>
+              <span class="info-value"><a href="tel:+919610742239">+91 9610742239</a></span>
+            </div>
+            <div class="info-item">
+              <span class="info-label"><i class="fa-solid fa-location-dot"></i> Location:</span>
+              <span class="info-value">Jodhpur, Rajasthan, India</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label"><i class="fa-solid fa-graduation-cap"></i> Degree:</span>
+              <span class="info-value">B.Tech AI & DS (2026)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="education-timeline-wrapper">
+          <h3>Education Timeline</h3>
+          <div class="timeline">
+            <!-- Timeline Item 1 -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">2023 - 2026 (Expected)</div>
+              <div class="timeline-card">
+                <h4>B.Tech in Artificial Intelligence & Data Science</h4>
+                <p class="institute">MBM University, Jodhpur</p>
+                <span class="score-badge">CGPA: 7.56</span>
+                <p class="timeline-desc">Lateral Entry admission. Specialized in Deep Learning, Computer Vision, and Data Engineering.</p>
+              </div>
+            </div>
+            <!-- Timeline Item 2 -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">2020 - 2023</div>
+              <div class="timeline-card">
+                <h4>Diploma in Civil Engineering</h4>
+                <p class="institute">Government Polytechnic College, Jodhpur</p>
+                <span class="score-badge">Marks: 8.93%</span>
+                <p class="timeline-desc">Acquired strong spatial analysis, structural foundation, and project execution concepts. Won Best Major Project Award.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills-section section-padding">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tagline">My Arsenal</span>
+        <h2 class="section-title">Technical Expertise</h2>
+        <div class="section-underline"></div>
+      </div>
+
+      <div class="skills-grid reveal">
+        <!-- Category 1 -->
+        <div class="skills-card">
+          <div class="skills-icon-header">
+            <i class="fa-solid fa-chart-line"></i>
+            <h3>Analytical & Data Tools</h3>
+          </div>
+          <div class="skills-list">
+            <div class="skill-tag-item"><i class="fa-brands fa-python py-color"></i> Python</div>
+            <div class="skill-tag-item"><i class="fa-solid fa-database sql-color"></i> SQL (MySQL)</div>
+            <div class="skill-tag-item"><i class="fa-solid fa-chart-bar powerbi-color"></i> Power BI</div>
+            <div class="skill-tag-item"><i class="fa-solid fa-circle-nodes tableau-color"></i> Tableau</div>
+            <div class="skill-tag-item"><i class="fa-solid fa-book-open"></i> Jupyter Notebooks</div>
+            <div class="skill-tag-item"><i class="fa-solid fa-square-root-variable"></i> NumPy & Pandas</div>
+            <div class="skill-tag-item"><i class="fa-solid fa-chart-area"></i> Matplotlib</div>
+          </div>
+        </div>
+
+        <!-- Category 2 -->
+        <div class="skills-card">
+          <div class="skills-icon-header">
+            <i class="fa-solid fa-eye"></i>
+            <h3>Computer Vision & AI</h3>
+          </div>
+          <div class="skills-list">
+            <div class="skill-tag-item"><i class="fa-solid fa-video cv-color"></i> OpenCV</div>
+            <div class="skill-tag-item"><i class="fa-solid fa-brain cv-color"></i> YOLO (v8 / Custom)</div>
+            <div class="skill-tag-item"><i class="fa-solid fa-network-wired"></i> Deep Neural Networks</div>
+            <div class="skill-tag-item"><i class="fa-solid fa-vector-square"></i> RCNN & Roboflow</div>
+            <div class="skill-tag-item"><i class="fa-solid fa-cube"></i> 3D Point Cloud Processing</div>
+          </div>
+        </div>
+
+        <!-- Category 3 -->
+        <div class="skills-card">
+          <div class="skills-icon-header">
+            <i class="fa-solid fa-code"></i>
+            <h3>Web & Interactive Visualization</h3>
+          </div>
+          <div class="skills-list">
+            <div class="skill-tag-item"><i class="fa-brands fa-html5 html-color"></i> HTML5</div>
+            <div class="skill-tag-item"><i class="fa-brands fa-css3-alt css-color"></i> CSS3</div>
+            <div class="skill-tag-item"><i class="fa-brands fa-js js-color"></i> JavaScript (ES6+)</div>
+            <div class="skill-tag-item"><i class="fa-solid fa-cube"></i> Three.js</div>
+            <div class="skill-tag-item"><i class="fa-solid fa-map"></i> Potree Integration</div>
+            <div class="skill-tag-item"><i class="fa-solid fa-chart-pie"></i> Plotly Dashboards</div>
+          </div>
+        </div>
+
+        <!-- Category 4 -->
+        <div class="skills-card">
+          <div class="skills-icon-header">
+            <i class="fa-solid fa-gears"></i>
+            <h3>Interdisciplinary & Soft Skills</h3>
+          </div>
+          <div class="skills-list">
+            <div class="skill-tag-item"><i class="fa-solid fa-microchip"></i> ESP32 & IoT Controls</div>
+            <div class="skill-tag-item"><i class="fa-solid fa-users"></i> Leadership & Team Management</div>
+            <div class="skill-tag-item"><i class="fa-solid fa-bezier-curve"></i> Wireframing & Prototyping</div>
+            <div class="skill-tag-item"><i class="fa-solid fa-handshake"></i> Cross-domain Collaboration</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work Experience Section -->
+  <section id="experience" class="experience-section section-padding">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tagline">My Professional Journey</span>
+        <h2 class="section-title">Work Experience</h2>
+        <div class="section-underline"></div>
+      </div>
+
+      <div class="experience-timeline reveal">
+        
+        <!-- Experience Item 1 -->
+        <div class="exp-item">
+          <div class="exp-logo-area">
+            <div class="exp-icon-glow">
+              <i class="fa-solid fa-brain"></i>
+            </div>
+          </div>
+          <div class="exp-content">
+            <div class="exp-header">
+              <h3>AIML Developer</h3>
+              <span class="company-link">Mine Excellence, Jodhpur</span>
+              <span class="exp-duration"><i class="fa-regular fa-calendar-days"></i> Jan 2026 – Present</span>
+            </div>
+            <ul class="exp-bullets">
+              <li>Developed algorithms for structural geological feature detection and analytical data processing from 3D Point Cloud data.</li>
+              <li>Processed large-scale point cloud datasets for discontinuity characterization and orientation analysis.</li>
+              <li>Designed and built high-performance interactive 3D visualizations using <strong>Potree</strong> and <strong>Three.js</strong> for browser-based exploration.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Experience Item 2 -->
+        <div class="exp-item">
+          <div class="exp-logo-area">
+            <div class="exp-icon-glow">
+              <i class="fa-solid fa-chart-pie"></i>
+            </div>
+          </div>
+          <div class="exp-content">
+            <div class="exp-header">
+              <h3>Intern, Data Analyst & Application Developer</h3>
+              <span class="company-link">Secure Meters Limited, Udaipur</span>
+              <span class="exp-duration"><i class="fa-regular fa-calendar-days"></i> Jun 2025 – Jul 2025</span>
+            </div>
+            <ul class="exp-bullets">
+              <li>Designed and developed <strong>CUBE</strong>, a custom Service & Repair (SR) Management and Analytics application to deliver data-driven metrics.</li>
+              <li>Built real-time interactive business intelligence dashboards to track KPIs, service performance, and overall operations.</li>
+              <li>Implemented automated data preprocessing pipelines using Python and Excel to clean, shape, and structure business records.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Experience Item 3 -->
+        <div class="exp-item">
+          <div class="exp-logo-area">
+            <div class="exp-icon-glow">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+          </div>
+          <div class="exp-content">
+            <div class="exp-header">
+              <h3>Research Intern, Deep Learning & Computer Vision</h3>
+              <span class="company-link">DRDO (Defence Research and Development Organisation), Jodhpur</span>
+              <span class="exp-duration"><i class="fa-regular fa-calendar-days"></i> May 2024 - Aug 2024</span>
+            </div>
+            <ul class="exp-bullets">
+              <li>Researched Deep Neural Networks, Faster R-CNN, and YOLO model configurations for real-world military defense use-cases.</li>
+              <li>Designed and developed a <strong>Trash Detection System</strong> using YOLOv8, leading dataset collection, annotation, model training, and parameter optimization.</li>
+              <li>Maintained robust performance evaluation standards to ensure model generalizability in complex terrain backgrounds.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section section-padding">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tagline">My Creations</span>
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="section-underline"></div>
+      </div>
+
+      <div class="projects-grid reveal">
+        
+        <!-- Project 1: Life Tracker -->
+        <div class="project-card">
+          <div class="project-img-placeholder">
+            <i class="fa-solid fa-microphone-lines project-main-icon"></i>
+            <div class="project-glow-layer bg-violet"></div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Life Tracker - Smart Voice Task Manager</h3>
+            <p class="project-desc">
+              An automated, ambient task management system designed specifically for Alzheimer's patients and individuals suffering from short-term memory loss. The system runs continuously in the background, listening to verbal cues, extracting actionable items, and structuring them into daily checklists automatically.
+            </p>
+            <div class="project-tags">
+              <span>Python</span>
+              <span>Speech NLP</span>
+              <span>SQLite</span>
+              <span>Voice UI</span>
+              <span>Assistive Tech</span>
+            </div>
+            <div class="project-links">
+              <span class="project-meta-info"><i class="fa-solid fa-brain"></i> Speech Recognition</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Asana Yoga Pose Classifier -->
+        <div class="project-card">
+          <div class="project-img-placeholder">
+            <i class="fa-solid fa-person-running project-main-icon"></i>
+            <div class="project-glow-layer bg-indigo"></div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Asana - CNN-RNN Yoga Pose Classifier</h3>
+            <p class="project-desc">
+              A computer vision based classifier combining Convolutional Neural Networks (CNN) for spatial feature extraction with Recurrent Neural Networks (RNN) to model temporal sequence transitions. Classifies complex yoga postures and verifies body alignment angles dynamically.
+            </p>
+            <div class="project-tags">
+              <span>Deep Learning</span>
+              <span>PyTorch</span>
+              <span>CNN-RNN</span>
+              <span>Computer Vision</span>
+              <span>Time-Series</span>
+            </div>
+            <div class="project-links">
+              <span class="project-meta-info"><i class="fa-solid fa-network-wired"></i> Pose Classification</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: CUBE -->
+        <div class="project-card">
+          <div class="project-img-placeholder">
+            <i class="fa-solid fa-cubes project-main-icon"></i>
+            <div class="project-glow-layer bg-cyan"></div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">CUBE - SR Analytics & Management App</h3>
+            <p class="project-desc">
+              End-to-end Service & Repair management and analytics platform. Built data preprocessing layers to clean and transform messy raw service files. Integrated interactive Plotly dashboards, tracking diagnostic metrics and operator turnaround times in real-time.
+            </p>
+            <div class="project-tags">
+              <span>Python</span>
+              <span>Plotly Dash</span>
+              <span>Pandas</span>
+              <span>Data Transformation</span>
+              <span>BI Dashboard</span>
+            </div>
+            <div class="project-links">
+              <span class="project-meta-info"><i class="fa-solid fa-chart-line"></i> Secure Meters Project</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: ADAS Module -->
+        <div class="project-card">
+          <div class="project-img-placeholder">
+            <i class="fa-solid fa-car-side project-main-icon"></i>
+            <div class="project-glow-layer bg-orange"></div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">ADAS Module - Road Object Detection</h3>
+            <p class="project-desc">
+              Real-time Advanced Driver Assistance System module designed to locate and classify obstacles, pedestrians, lane markers, and vehicle proximity. Built on custom-trained YOLO architecture, optimized for frame-rate performance and inference accuracy under changing illumination.
+            </p>
+            <div class="project-tags">
+              <span>YOLO</span>
+              <span>Roboflow</span>
+              <span>Computer Vision</span>
+              <span>Object Tracking</span>
+              <span>Inference Opt</span>
+            </div>
+            <div class="project-links">
+              <span class="project-meta-info"><i class="fa-solid fa-microchip"></i> Driver Safety System</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: Trash Detection System -->
+        <div class="project-card">
+          <div class="project-img-placeholder">
+            <i class="fa-solid fa-trash-can project-main-icon"></i>
+            <div class="project-glow-layer bg-red"></div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Trash Detection System (DRDO)</h3>
+            <p class="project-desc">
+              Research project completed at DRDO. Designed custom YOLOv8 structures to locate waste patterns and litter types in complex environment boundaries. Curated annotations, analyzed performance losses, and tuned hyper-parameters to enhance military field environment cleanliness tracking.
+            </p>
+            <div class="project-tags">
+              <span>YOLOv8</span>
+              <span>DRDO Research</span>
+              <span>Data Annotation</span>
+              <span>Hyperparameter Tuning</span>
+            </div>
+            <div class="project-links">
+              <span class="project-meta-info"><i class="fa-solid fa-shield-halved"></i> Defense Research</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificates & Achievements Section -->
+  <section id="certificates" class="certificates-section section-padding">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tagline">My Accomplishments</span>
+        <h2 class="section-title">Certifications & Achievements</h2>
+        <div class="section-underline"></div>
+      </div>
+
+      <!-- Achievements Showcase -->
+      <div class="achievements-grid reveal">
+        <div class="achievement-card">
+          <div class="ach-icon"><i class="fa-solid fa-trophy"></i></div>
+          <div class="ach-text">
+            <h3>1st Position - EDIFICIO'24, IIT Jodhpur</h3>
+            <p>Designed and built a functional physical prototype of a Hyperloop system using ESP32 microcontrollers, IoT controls, and relay modules to simulate station-to-station automation.</p>
+            <button class="btn btn-sm btn-outline view-cert-btn" data-file="certificates/IIT CERTIFICATE.pdf">
+              <i class="fa-solid fa-expand"></i> View IIT Certificate
+            </button>
+          </div>
+        </div>
+
+        <div class="achievement-card">
+          <div class="ach-icon"><i class="fa-solid fa-award"></i></div>
+          <div class="ach-text">
+            <h3>Best Major Project Award - GPC Jodhpur</h3>
+            <p>Engineered a structured physical layout demonstrating civil engineering principles of an underwater tunnel transit system. Honored for exemplary visualization and execution.</p>
+            <button class="btn btn-sm btn-outline view-cert-btn" data-file="certificates/GPC MAJOR PROJECT.pdf">
+              <i class="fa-solid fa-expand"></i> View Project Certificate
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certifications list -->
+      <div class="certificates-list-title reveal">
+        <h3>Verified Certifications</h3>
+        <p>Click on any certification to view the original PDF document or image verification.</p>
+      </div>
+
+      <div class="certificates-grid reveal">
+        <!-- Cert 1 -->
+        <div class="cert-item-card view-cert-btn" data-file="certificates/Secure Meters certificate.pdf">
+          <div class="cert-icon-box"><i class="fa-solid fa-file-invoice"></i></div>
+          <div class="cert-body">
+            <h4>Secure Meters Limited Internship</h4>
+            <p>Verification of internship, application development, and data visualization deliverables.</p>
+          </div>
+          <div class="cert-action"><i class="fa-solid fa-circle-chevron-right"></i></div>
+        </div>
+
+        <!-- Cert 2 -->
+        <div class="cert-item-card view-cert-btn" data-file="certificates/DRDO certificate.jpg">
+          <div class="cert-icon-box"><i class="fa-solid fa-image"></i></div>
+          <div class="cert-body">
+            <h4>DRDO Internship Certificate</h4>
+            <p>Validation of research, computer vision and Deep Learning internship work at DRDO.</p>
+          </div>
+          <div class="cert-action"><i class="fa-solid fa-circle-chevron-right"></i></div>
+        </div>
+
+        <!-- Cert 3 -->
+        <div class="cert-item-card view-cert-btn" data-file="certificates/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_68dbfa4eee643c559158c017_1766486473535_completion_certificate.pdf">
+          <div class="cert-icon-box"><i class="fa-solid fa-graduation-cap"></i></div>
+          <div class="cert-body">
+            <h4>IBM Data Science Professional</h4>
+            <p>Comprehensive studies covering databases, SQL, visualization, and Python statistics.</p>
+          </div>
+          <div class="cert-action"><i class="fa-solid fa-circle-chevron-right"></i></div>
+        </div>
+
+        <!-- Cert 4 -->
+        <div class="cert-item-card view-cert-btn" data-file="certificates/JDA CERTIFICATE SUVIDH.pdf">
+          <div class="cert-icon-box"><i class="fa-solid fa-city"></i></div>
+          <div class="cert-body">
+            <h4>Jodhpur Development Authority</h4>
+            <p>Civil Engineering and infrastructural design project validation certificate.</p>
+          </div>
+          <div class="cert-action"><i class="fa-solid fa-circle-chevron-right"></i></div>
+        </div>
+
+        <!-- Cert 5 -->
+        <div class="cert-item-card view-cert-btn" data-file="certificates/Volunteer certificate suvidh.pdf">
+          <div class="cert-icon-box"><i class="fa-solid fa-hands-helping"></i></div>
+          <div class="cert-body">
+            <h4>Volunteer Service Certificate</h4>
+            <p>Acknowledging leadership and event management support in technical assemblies.</p>
+          </div>
+          <div class="cert-action"><i class="fa-solid fa-circle-chevron-right"></i></div>
+        </div>
+
+        <!-- Cert 6 -->
+        <div class="cert-item-card view-cert-btn" data-file="certificates/1763580136986.png">
+          <div class="cert-icon-box"><i class="fa-solid fa-award"></i></div>
+          <div class="cert-body">
+            <h4>Encarta Anchoring Honor</h4>
+            <p>Acknowledgment for hosting live sessions at MBM University's Technical Fest.</p>
+          </div>
+          <div class="cert-action"><i class="fa-solid fa-circle-chevron-right"></i></div>
+        </div>
+
+        <!-- Cert 7 -->
+        <div class="cert-item-card view-cert-btn" data-file="certificates/1765567207226.jpg">
+          <div class="cert-icon-box"><i class="fa-solid fa-certificate"></i></div>
+          <div class="cert-body">
+            <h4>TCS Forage Data Visualization</h4>
+            <p>Completion verification for data mapping and interactive Power BI models.</p>
+          </div>
+          <div class="cert-action"><i class="fa-solid fa-circle-chevron-right"></i></div>
+        </div>
+
+        <!-- Cert 8 -->
+        <div class="cert-item-card view-cert-btn" data-file="certificates/download.png">
+          <div class="cert-icon-box"><i class="fa-solid fa-award"></i></div>
+          <div class="cert-body">
+            <h4>Simplilearn Cloud Introduction</h4>
+            <p>Introductory certification validation for Google Cloud Platform models.</p>
+          </div>
+          <div class="cert-action"><i class="fa-solid fa-circle-chevron-right"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section section-padding">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tagline">Start a Conversation</span>
+        <h2 class="section-title">Get in Touch</h2>
+        <div class="section-underline"></div>
+      </div>
+
+      <div class="contact-grid grid-2 reveal">
+        <div class="contact-info-panel">
+          <h3>Let's Work Together</h3>
+          <p>
+            Interested in AI/ML solutions, Computer Vision pipelines, or data-driven software projects? Fill out the form or reach out directly via phone or email!
+          </p>
+
+          <div class="contact-methods">
+            <div class="contact-method-card">
+              <i class="fa-solid fa-envelope contact-icon"></i>
+              <div>
+                <h4>Send an Email</h4>
+                <a href="mailto:suvidhmathur25@gmail.com">suvidhmathur25@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact-method-card">
+              <i class="fa-solid fa-phone contact-icon"></i>
+              <div>
+                <h4>Call Me</h4>
+                <a href="tel:+919610742239">+91 9610742239</a>
+              </div>
+            </div>
+
+            <div class="contact-method-card">
+              <i class="fa-solid fa-location-dot contact-icon"></i>
+              <div>
+                <h4>Current Address</h4>
+                <p>Jodhpur, Rajasthan, India</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-panel">
+          <form id="contact-form" class="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="form-name">Your Name</label>
+                <input type="text" id="form-name" placeholder="John Doe" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="form-email">Your Email</label>
+                <input type="email" id="form-email" placeholder="john@example.com" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="form-subject">Subject</label>
+                <input type="text" id="form-subject" placeholder="Project Inquiry" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="form-message">Message</label>
+                <textarea id="form-message" rows="5" placeholder="Tell me about your project detail..." required></textarea>
+              </div>
+            </div>
+            <div class="form-submit-row">
+              <button type="submit" class="btn btn-primary btn-block" id="form-submit">
+                Send Message <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </div>
+          </form>
+          <div class="form-status" id="form-status"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; 2026 Suvidh Mathur. All Rights Reserved.</p>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/suvidh-mathur/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="mailto:suvidhmathur25@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+        <a href="tel:+919610742239"><i class="fa-solid fa-phone"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Certificate Preview Modal -->
+  <div class="modal" id="cert-modal" aria-hidden="true">
+    <div class="modal-backdrop" id="modal-backdrop"></div>
+    <div class="modal-content-wrapper">
+      <div class="modal-header">
+        <h3 id="modal-title">Certificate Viewer</h3>
+        <button class="modal-close" id="modal-close" aria-label="Close Preview">&times;</button>
+      </div>
+      <div class="modal-body" id="modal-body">
+        <!-- Interactive viewer goes here (iframe or img) -->
+      </div>
+      <div class="modal-footer">
+        <a href="#" id="modal-download-link" class="btn btn-primary btn-sm" download>
+          <i class="fa-solid fa-download"></i> Open in New Tab / Download
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Core Javascript Logic -->
+  <script src="script.js"></script>
+</body>
+</html>

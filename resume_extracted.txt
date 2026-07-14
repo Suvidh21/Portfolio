@@ -1,0 +1,101 @@
+suvidhmathur25@gmail.com
+Suvidh Mathur
++919610742239
+B.Tech ArtificialIntelligenceandDataScience
+Degree University/Institute Year CGPA/Marks (%)
+B.Tech Artificial Intelligence and Data Science (Lateral Admission) MBM University, Jodhpur 2026 7.56
+Diploma Civil Engineering GPC, Jodhpur 2023 8.93
+WORK EXPERIENCE
+AIML Developer | Mine Excellence , Jodhpur (Jan 2026 – current )
+Developed algorithms for structural feature detection and geological data analysis from 3D Point Cloud data.Processed
+
+large-scale point cloud datasets for discontinuity characterization and orientation analysis.
+Processed large-scale point cloud datasets for discontinuity characterization and orientation analysis.
+
+Developed visualization using Potree and Three.js for interactive 3D exploration.
+
+Intern, Data Analyst & Application Developer | Secure Meters Limited, Udaipur (Jun 2025 – Jul 2025)
+Designed and developed CUBE, a Service & Repair (SR) Management application, enabling data-driven insights through
+
+structured analytics and visualization.
+Built interactive dashboards to monitor KPIs, service performance, and operational efficiency.
+
+Implemented data cleaning, preprocessing, and transformation pipelines using Python and Excel to support business
+
+intelligence and decision-making
+Research Intern, Deep Learning & Computer Vision | DRDO, Jodhpur (May 2024 - Aug 2024)
+Worked on Deep Neural Networks, RCNN, and YOLO-based object detection models, applying computer vision techniques to
+
+real-world defense use-cases.
+Designed and developed a Trash Detection system using YOLOv8, including dataset preparation, annotation, training, and
+
+sperformance evaluation.
+POSITIONS OF RESPONSIBILITY
+Head, Anchor | ENCARTA v24.0 – Technical & Innovation Fest (May 2024)
+Anchored and coordinated live sessions during ENCARTA v24.0, a university-level technical
+
+fest.,Managed stage flow, audience engagement, and event coordination.
+Coordinator, Marketing Team | ENCARTA v24.0 (May 2024)
+Visited multiple colleges to promote ENCARTA v24.0 and pitched the event to students.
+
+PROJECTS
+CUBE – Service & Repair (SR) Management & Analytics Application-Link (Jul 2025)
+Designed and developed CUBE, an end-to-end Service & Repair management and analytics application to process and visualize
+
+operational data.
+Implemented automated data cleaning, structuring, and transformation pipelines to convert raw service records into analysis-
+
+ready datasets.
+Built interactive dashboards and charts using Plotly to deliver real-time visual insights on service performance and KPIs.
+
+ADAS Module – YOLO-Based Object Detection System-Link (Aug 2025)
+Developed a real-time Advanced Driver Assistance System (ADAS) using YOLO-based Deep Neural Networks for object
+
+detection.
+Trained and evaluated custom datasets using Roboflow, focusing on detection accuracy and real-world deployment
+
+scenarios.
+Trash Detection Systems using YOLOv8-Link (July 2024)
+Designed and implemented a trash detection system using YOLOv8 for object classification in real-world
+
+environments.
+Performed dataset collection, annotation, model training, and evaluation as part of a research internship.
+
+Improved detection accuracy through model experimentation and hyperparameter tuning.
+
+ACHIVEMENTS
+1st Position – EDIFICIO’24, IIT JODHPUR (Apr 2024)
+Built a working prototype of a Hyperloop system demonstrating fundamental working principles of
+
+Hyperloop transportation through a functional physical model.
+Designed an IoT-based control system where both stations were operated using ESP32 microcontrollers and
+
+relay modules.
+Best Major Project Award–Government Polytechnic College, Jodhpur (June 2023)
+Designed and built a well-structured physical model of an underwater tunnel transportation system,
+
+demonstrating fundamental engineering and transportation concepts.
+Presented the model to illustrate real-world applications of underground and underwater transport
+
+infrastructure.
+CERTIFICATIONS
+Simplilearn-Introduction to Google Cloud Platform.
+
+IBM Data Analyst: Data visualization and dashboards, Python for Data science, AI & Development, Databases and
+
+SQL for Data science with Python, data analysis with Python, Data Visualization with Python.
+Tata Consultancy Services(Forage)-Data Visualization: Empowering Business on PowerBI.
+
+Deloitte Australia (Forage) : Foundations of Data Visualization using Tableau.
+
+Microsoft Power BI Desktop for Business Intelligence
+
+SKILLS
+Analytical Tools: Python, SQL (MySQL), Power BI, Tableau, Jupyter Notebooks, NumPy, Pandas,Matplotlib.
+
+Computer Vision: openCV, YOLO.
+
+Web Development:HTML, CSS, JavaScript
+
+Soft Skills: Leadership, cross-domain collaboration, wireframing and Prototyping.
+
