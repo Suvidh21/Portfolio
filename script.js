@@ -165,27 +165,29 @@ document.addEventListener('DOMContentLoaded', () => {
       .replace(/[_-]/g, " ") // replace underscores/dashes with spaces
       .toUpperCase();
 
+    const normalizedName = filenameWithExt.toLowerCase();
+
     // Map specific files to nicer titles
-    if (filenameWithExt.includes('IIT CERTIFICATE')) {
+    if (normalizedName.includes('iit certificate')) {
       formattedTitle = "EDIFICIO'24 IIT JODHPUR - 1ST POSITION CERTIFICATE";
-    } else if (filenameWithExt.includes('GPC MAJOR PROJECT')) {
+    } else if (normalizedName.includes('gpc major project')) {
       formattedTitle = "BEST MAJOR PROJECT AWARD CERTIFICATE";
-    } else if (filenameWithExt.includes('DRDO certificate')) {
+    } else if (normalizedName.includes('drdo certificate')) {
       formattedTitle = "DRDO RESEARCH INTERNSHIP CERTIFICATE";
-    } else if (filenameWithExt.includes('Secure Meters certificate')) {
+    } else if (normalizedName.includes('secure meters certificate')) {
       formattedTitle = "SECURE METERS LTD. INTERNSHIP CERTIFICATE";
-    } else if (filenameWithExt.includes('JDA CERTIFICATE')) {
+    } else if (normalizedName.includes('jda certificate')) {
       formattedTitle = "JODHPUR DEVELOPMENT AUTHORITY PROJECT CERTIFICATE";
-    } else if (filenameWithExt.includes('Volunteer certificate')) {
+    } else if (normalizedName.includes('volunteer certificate')) {
       formattedTitle = "VOLUNTEER SERVICE RECOGNITION";
-    } else if (filenameWithExt.includes('completion_certificate')) {
-      formattedTitle = "IBM DATA ANALYST PROFESSIONAL CERTIFICATION";
-    } else if (filenameWithExt.includes('1763580136986')) {
-      formattedTitle = "ENCARTA '24 ANCHORING CERTIFICATE OF HONOR";
-    } else if (filenameWithExt.includes('1765567207226')) {
-      formattedTitle = "TCS FORAGE DATA VISUALIZATION CERTIFICATE";
-    } else if (filenameWithExt.includes('download')) {
-      formattedTitle = "GOOGLE CLOUD PLATFORM CERTIFICATION - SIMPLILEARN";
+    } else if (normalizedName.includes('deloitte') || normalizedName.includes('forage data analyst')) {
+      formattedTitle = "DELOITTE FORAGE DATA ANALYST CERTIFICATE";
+    } else if (normalizedName.includes('hackerrank')) {
+      formattedTitle = "HACKERRANK SQL CERTIFICATE";
+    } else if (normalizedName.includes('simplilearn') || normalizedName.includes('upskill')) {
+      formattedTitle = "SIMPLILEARN UPSKILL CERTIFICATE";
+    } else if (normalizedName.includes('tata forage')) {
+      formattedTitle = "TATA FORAGE DATA ANALYST CERTIFICATE";
     }
 
     modalTitle.textContent = formattedTitle;
@@ -208,6 +210,21 @@ document.addEventListener('DOMContentLoaded', () => {
       
       embed.appendChild(fallback);
       modalBody.appendChild(embed);
+    } else if (['doc', 'docx'].includes(extension)) {
+      const docPreview = document.createElement('object');
+      docPreview.data = filePath;
+      docPreview.type = extension === 'docx'
+        ? 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
+        : 'application/msword';
+      docPreview.className = 'modal-preview-pdf';
+
+      const fallback = document.createElement('p');
+      fallback.style.padding = '20px';
+      fallback.style.textAlign = 'center';
+      fallback.innerHTML = `This browser cannot preview Word documents inline. Please open it in a new tab to read it.<br><br><a href="${filePath}" target="_blank" class="btn btn-primary">Open DOC in New Tab</a>`;
+
+      docPreview.appendChild(fallback);
+      modalBody.appendChild(docPreview);
     } else if (['jpg', 'jpeg', 'png', 'gif', 'svg'].includes(extension)) {
       // Create Image tag
       const img = document.createElement('img');
@@ -265,44 +282,5 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-
-  // ==========================================================================
-  // 6. Contact Form Success Simulation
-  // ==========================================================================
-  const contactForm = document.getElementById('contact-form');
-  const formStatus = document.getElementById('form-status');
-
-  if (contactForm && formStatus) {
-    contactForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      
-      const submitBtn = contactForm.querySelector('button[type="submit"]');
-      const originalText = submitBtn.innerHTML;
-      
-      // Feedback button animation
-      submitBtn.disabled = true;
-      submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Sending...';
-      
-      // Simulate form submission network call
-      setTimeout(() => {
-        // Reset button
-        submitBtn.disabled = false;
-        submitBtn.innerHTML = originalText;
-        
-        // Show success status
-        formStatus.textContent = "Thank you, Suvidh! Your message has been sent successfully. (Note: This is a simulation. For live emails, integrate this form with a service like EmailJS or a backend server.)";
-        formStatus.className = "form-status success";
-        
-        // Reset form inputs
-        contactForm.reset();
-        
-        // Auto fadeout message after 8 seconds
-        setTimeout(() => {
-          formStatus.style.display = 'none';
-        }, 8000);
-        
-      }, 1500);
-    });
-  }
 
 });
