@@ -16,7 +16,7 @@
 </head>
 <body>
 
-  <!-- Background Decorative Blobs -->
+  <!-- Background Decorative Blobs (below-hero sections only) -->
   <div class="glowing-blob blob-1"></div>
   <div class="glowing-blob blob-2"></div>
   <div class="glowing-blob blob-3"></div>
@@ -53,7 +53,18 @@
 
   <!-- Hero Section -->
   <section id="home" class="hero-section">
-    <div class="container hero-container grid-2">
+    <!-- Full-bleed puppet video background -->
+    <video
+      id="hero-bg-video"
+      class="hero-video-bg"
+      src="background.mp4"
+      muted
+      playsinline
+      preload="auto"
+      aria-hidden="true"
+    ></video>
+
+    <div class="container hero-container">
       <div class="hero-content reveal">
         <div class="badge-wrapper">
           <span class="badge"><i class="fa-solid fa-circle-dot pulse"></i> Available for Opportunities</span>
@@ -82,6 +93,9 @@
           <a href="https://www.linkedin.com/in/suvidh-mathur/" target="_blank" class="social-icon" aria-label="LinkedIn">
             <i class="fa-brands fa-linkedin-in"></i>
           </a>
+          <a href="https://github.com/Suvidh21" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
           <a href="mailto:suvidhmathur25@gmail.com" class="social-icon" aria-label="Email">
             <i class="fa-regular fa-envelope"></i>
           </a>
@@ -91,13 +105,6 @@
         </div>
       </div>
 
-      <div class="hero-image-area reveal">
-        <div class="image-border-glow">
-          <div class="image-inner">
-            <img src="photo/Suvidh Profile Photo.png" alt="Suvidh Mathur" class="profile-photo" id="profile-img">
-          </div>
-        </div>
-      </div>
     </div>
     
     <div class="scroll-indicator">
@@ -387,6 +394,34 @@
                 <i class="fa-solid fa-file-lines"></i> View Paper
               </button>
               <span class="project-meta-info"><i class="fa-solid fa-shield-halved"></i> DRDO Internship</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- DR. MIGI – Live Research Project -->
+        <div class="project-card">
+          <div class="project-img-placeholder">
+            <i class="fa-solid fa-brain project-main-icon"></i>
+            <div class="project-glow-layer bg-teal"></div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">🧠 DR. MIGI — AI Healthcare Companion (Live)</h3>
+            <p class="project-desc">
+              DR. MIGI is an intelligent AI healthcare companion designed to assist doctors with longitudinal patient analysis and clinical decision support. An ongoing research and engineering project exploring Retrieval-Augmented Generation (RAG), local LLM inference, memory systems, prompt engineering, and modern AI architectures — documenting the full evolution from foundational experiments to production-oriented implementations.
+            </p>
+            <div class="project-tags">
+              <span>RAG</span>
+              <span>Local LLM</span>
+              <span>Clinical AI</span>
+              <span>Prompt Engineering</span>
+              <span>Memory Systems</span>
+              <span>AI Research</span>
+            </div>
+            <div class="project-links">
+              <a href="https://dr-migi.streamlit.app" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline" aria-label="Open DR. MIGI live demo">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+              </a>
+              <span class="project-meta-info"><i class="fa-solid fa-heart-pulse"></i> Ongoing Research</span>
             </div>
           </div>
         </div>

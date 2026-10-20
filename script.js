@@ -53,7 +53,75 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   // ==========================================================================
-  // 2. Mobile Navbar Menu Toggle
+  // 2. Puppet Video — Eye-Tracking via Mouse (scrubs background.mp4 on X axis)
+  //    Mirrors the original React App.tsx logic exactly.
+  // ==========================================================================
+  const heroVideo = document.getElementById('hero-bg-video');
+
+  if (heroVideo) {
+    let heroTargetTime = 0;
+    let heroSeeking    = false;
+
+    function seekHeroVideo() {
+      // Guard: duration must be a finite positive number and no seek in progress
+      if (!Number.isFinite(heroVideo.duration) || heroVideo.duration <= 0 || heroSeeking) return;
+      // Only use the first 5 s — that's where the gaze sweep lives in the video
+      const next = Math.max(0, Math.min(Math.min(5, heroVideo.duration), heroTargetTime));
+      if (Math.abs(heroVideo.currentTime - next) < 0.025) return; // already close enough
+      heroSeeking = true;
+      try {
+        heroVideo.currentTime = next;
+      } catch (_) {
+        heroSeeking = false; // reset if browser threw (e.g. not enough data yet)
+      }
+    }
+
+    // After each seek completes, check if cursor moved further while we were seeking
+    heroVideo.addEventListener('seeked', () => {
+      heroSeeking = false;
+      if (Math.abs(heroVideo.currentTime - heroTargetTime) > 0.04) {
+        seekHeroVideo();
+      }
+    });
+
+    // Map horizontal mouse X → video timestamp
+    window.addEventListener('mousemove', (e) => {
+      if (!Number.isFinite(heroVideo.duration) || heroVideo.duration <= 0) return;
+      const progress = Math.max(0, Math.min(1, e.clientX / Math.max(window.innerWidth, 1)));
+      heroTargetTime = progress * Math.min(5, heroVideo.duration);
+      seekHeroVideo();
+    }, { passive: true });
+
+    // If video metadata is already loaded (cached), kick off a seek immediately
+    // so the puppet renders at the correct frame on page load
+    if (heroVideo.readyState >= 1) {
+      heroTargetTime = 0.5 * Math.min(5, heroVideo.duration); // default: centre gaze
+      seekHeroVideo();
+    }
+  }
+
+
+  // ==========================================================================
+  // 3. Blob Visibility — show blobs only after scrolling past the hero
+  // ==========================================================================
+  const heroSection = document.getElementById('home');
+
+  function updateBlobVisibility() {
+    if (!heroSection) return;
+    const heroBottom = heroSection.getBoundingClientRect().bottom;
+    if (heroBottom <= 0) {
+      document.body.classList.add('blobs-visible');
+    } else {
+      document.body.classList.remove('blobs-visible');
+    }
+  }
+
+  window.addEventListener('scroll', updateBlobVisibility, { passive: true });
+  updateBlobVisibility(); // run once on load
+
+
+  // ==========================================================================
+  // 5. Mobile Navbar Menu Toggle
   // ==========================================================================
   const mobileToggle = document.getElementById('mobile-toggle');
   const navMenu = document.getElementById('nav-menu');
@@ -86,7 +154,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   // ==========================================================================
-  // 3. Scroll Effects: Active Navbar Links & Sticky Header
+  // 6. Scroll Effects: Active Navbar Links & Sticky Header
   // ==========================================================================
   const navbar = document.getElementById('navbar');
   const sections = document.querySelectorAll('section');
@@ -119,7 +187,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   // ==========================================================================
-  // 4. Reveal on Scroll Animation (IntersectionObserver)
+  // 7. Reveal on Scroll Animation (IntersectionObserver)
   // ==========================================================================
   const revealElements = document.querySelectorAll('.reveal');
 
@@ -142,7 +210,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   // ==========================================================================
-  // 5. Certificate Viewer Modal
+  // 8. Certificate Viewer Modal
   // ==========================================================================
   const certModal = document.getElementById('cert-modal');
   const modalClose = document.getElementById('modal-close');
